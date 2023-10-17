@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="vi" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Đăng nhập</title>
+    <link rel="icon" href="https://lanchimart.biz/images/logo/logo-transparent.png">
+    <meta name="csrf-param" content="_csrf-frontend">
+<meta name="csrf-token" content="j87POG5NWoZd58TTZ91YcZSMAFJHfzpuOet0HwP4YaPC_a1QDxJjxGyM94kmpC0b_MYzKg8IFzgBrzVJVYEv2Q==">
+
+<link href="https://lanchimart.biz/assets/2b293ace/css/bootstrap.css" rel="stylesheet">
+<link href="https://lanchimart.biz/css/jquery.toast.css" rel="stylesheet">
+<link href="https://lanchimart.biz/css/site.css" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var hide_after = 10000;
+    </script>
+</head>
+<body class="d-flex flex-column h-100">
+
+<header>
+    </header>
+
+<main role="main" class="flex-shrink-0 ">
+    <div class="container">
+        <div class="hide">
+                    </div>
+        <div class="sign-up-header">
+    <div class="content">
+        <img src="https://lanchimart.biz/images/logo/logo-transparent.png" alt="" class="img-fluid img-logo">
+    </div>
+</div><div class="site-login">
+    <div class="row">
+        <div class="col-lg-4 ant-card card-signup">
+            <h1 class="text-center hide">Đăng nhập</h1>
+            <form id="login-form" action="https://lanchimart.biz/site/login" method="post">
+<input type="hidden" name="_csrf-frontend" value="j87POG5NWoZd58TTZ91YcZSMAFJHfzpuOet0HwP4YaPC_a1QDxJjxGyM94kmpC0b_MYzKg8IFzgBrzVJVYEv2Q==">
+                <div class="form-group field-loginform-username required">
+<label for="loginform-username">Tên đăng nhập</label>
+<input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>
+                <div class="form-group field-loginform-password required">
+<label for="loginform-password">Mật khẩu</label>
+<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" value="" autocomplete="new-password" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>
+                <div class="form-group field-loginform-rememberme">
+<div class="custom-control custom-checkbox">
+<input type="hidden" name="LoginForm[rememberMe]" value="0"><input type="checkbox" id="loginform-rememberme" class="custom-control-input" name="LoginForm[rememberMe]" value="1" checked>
+<label class="custom-control-label" for="loginform-rememberme">Hãy nhớ đến tôi</label>
+<div class="invalid-feedback"></div>
+
+</div>
+</div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block" name="login-button">Đăng nhập</button>                </div>
+
+            </form>            <p class="text-center">Không có tài khoản? <a href="https://lanchimart.biz/site/signup">Đăng ký</a></p>
+        </div>
+    </div>
+</div>
+    </div>
+</main>
+
+<div class="loading hide">
+    <div class="loading-bg"></div>
+    <div class="loader"></div>
+</div>
+<script>
+    var CHAT_URL = 'https://app.chatwoot.com';
+    var CHAT_KEY = 'C9PhGB6KxokQ5uY8RfKdxJoK';
+</script>
+<script src="https://lanchimart.biz/assets/d7b2d2fd/jquery.js"></script>
+<script src="https://lanchimart.biz/assets/ce59563c/yii.js"></script>
+<script src="https://lanchimart.biz/assets/ce59563c/yii.validation.js"></script>
+<script src="https://lanchimart.biz/assets/ce59563c/yii.activeForm.js"></script>
+<script src="https://lanchimart.biz/js/jquery.toast.js"></script>
+<script src="https://lanchimart.biz/js/site.js"></script>
+<script>jQuery(function ($) {
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Error!!!"});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Error!!!"});}},{"id":"loginform-rememberme","name":"rememberMe","container":".field-loginform-rememberme","input":"#loginform-rememberme","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.boolean(value, messages, {"trueValue":"1","falseValue":"0","message":"Hãy nhớ đến tôi phải là \u00221\u0022 hoặc \u00220\u0022.","skipOnEmpty":1});}}], {"errorSummary":".alert.alert-danger","errorCssClass":"is-invalid","successCssClass":"is-valid","validationStateOn":"input"});
+});</script></body>
+</html>
